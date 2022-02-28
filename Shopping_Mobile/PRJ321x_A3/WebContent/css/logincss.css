@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #c5f3ff !important;
+}
+body .container>div{
+    height: 100vh;
+}
+.dvcenter {
+    position: relative;
+}
+.dvmiddle {
+    position: absolute;
+    top: 20%;
+    height: 50%;
+    width: 100%;
+    box-shadow: 3px 5px #003d4766;
+}
+.welcome {
+    background-color: #003d47;
+    position: relative;
+}
+.welcome>span {
+    color: #f00;
+    background-color: #ff0;
+    z-index: 1;
+}
+#loginimg {
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    border-radius: 50%;
+}
+.dvform {
+    position: relative;
+    background-color: #cacaca;
+}
+.dvform>form {
+    /* border: 1px dotted black; */
+    padding-top: 20px;
+}
+form>hr {
+    margin: 10px 0;
+}
+form>p {
+    margin: 0;
+    font-weight: bold;
+    /* border: 1px solid blue; */
+}
+input#username, input#userpass {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+}
+input#rememberpass, span.rememberpass {
+    display: inline-block;
+    font-size: small;
+    /* border: 1px solid red; */
+}
+input#submit {
+    width: 100%;
+    height: 40px;
+    background-color: #008cff;
+    color: #fff;
+    border: none;
+}
+input#submit:hover {
+    background-color: #009650;
+    border-top: 2px solid #008cff;
+    border-right: 1px solid #008cff
+}
+input#submit:active {
+    background-color: #008cff;
+    border: none;
+}
+.forgotpass {
+    margin: 0;
+    font-size: small;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.forgotpass>a {
+    color: #f717f7;
+    font-weight: bold;
+    text-decoration: none;
+}
+#cancel {
+    width: 25%;
+    height: 30px;
+    background-color: #ff6822;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+#cancel:hover {
+    background-color: #009650;
+    border-bottom: 2px solid #ff6822;
+    border-right: 1px solid #ff6822;
+}
+#cancel:active {
+    background-color: #ff6822;
+    border: none;
+}
+
+
+/* The last code */
+@media (max-width: 992px) {
+    .okhide {
+        display: none;
+    }
+    .dvmiddle {
+        top: 10%;
+        height: 80%;
+    }
+    #loginimg {
+        width: 25%;
+        top: 0;
+        left: 50%;
+        margin-top: -3%;
+        margin-left: -13%;
+    }
+}

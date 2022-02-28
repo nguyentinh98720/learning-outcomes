@@ -1,0 +1,144 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    height: 100vh;
+    background-color: #08102e;
+}
+.leftnav {
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px dotted #fff;
+}
+.topnav {
+    height: 10%;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.body {
+    height: 90%;
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.leftnav>h2 {
+    height: 10%;
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: #feffca;
+}
+.leftnav>div {
+    height: 40px;
+    width: 80%;
+    color: #fff;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.leftnav>div>p, .leftnav>div>span {
+    height: 100%;
+    margin: auto;
+    padding-top: 5px;
+}
+.leftnav>div>p {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+}
+.leftnav>div>span {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+#staffmanager:hover, #dashboard:hover {
+    color: #f1f360;
+    font-weight: bold;
+}
+#dashboard {
+    background-color: #d400ff;
+}
+.topnav>div:first-child{
+    position: relative;
+    float: left;
+    width: 90%;
+    height: 100%;
+}
+.topnav>div>h3 {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    color: #f1f360;
+    margin: auto;
+}
+.topnav>div:last-child {
+    position: relative;
+    float: right;
+    width: 10%;
+    height: 100%;
+}
+.topnav>div>a {
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    color: #fff;
+}
+.topnav>div>a:hover {
+    color: #f1f360;
+    font-weight: bold;
+}
+.topnav>div>a>span {
+    display: inline-block;
+    padding: 10px;
+}
+.body>div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#div2 {
+    display: none;
+}
+.body>div>span {
+    display: block;
+    background-color: #d400ff;
+    width: 50%;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+.body table {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    width: 50%;
+    background-color: #2d4391;
+    text-align: center;
+    border-collapse: collapse;
+}
+table tr {
+    height: 30px;
+}
+th {
+    padding: 10px;
+}
+td {
+    border-top: 1px solid #fff;
+    padding: 10px;
+}

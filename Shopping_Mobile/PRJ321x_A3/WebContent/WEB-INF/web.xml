@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>PRJ321x_A3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>ListController</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListController</servlet-name>
+  	<servlet-class>controller.product.ListController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SearchController2</servlet-name>
+  	<servlet-class>controller.SearchController2</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InformationProductController</servlet-name>
+  	<servlet-class>controller.InformationProductController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddToCartController</servlet-name>
+  	<servlet-class>controller.AddToCartController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ByNow</servlet-name>
+  	<servlet-class>controller.ByNow</servlet-class>
+  </servlet>
+  
+  <context-param>
+    <param-name>username</param-name>
+    <param-value>admin@email.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>123</param-value>
+  </context-param>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListController</servlet-name>
+  	<url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SearchController2</servlet-name>
+  	<url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InformationProductController</servlet-name>
+  	<url-pattern>/product</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddToCartController</servlet-name>
+  	<url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ByNow</servlet-name>
+  	<url-pattern>/buy</url-pattern>
+  </servlet-mapping>
+  
+  	<session-config>
+		<session-timeout>
+			1800
+		</session-timeout>
+	</session-config>
+</web-app>
